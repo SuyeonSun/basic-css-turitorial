@@ -1,0 +1,54 @@
+/* https://nykim.work/59 */
+
+/* 
+.container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+} 
+*/
+
+/* 
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 300px 150px; 
+} 
+*/
+/* 나머지 row는 default 값 */
+
+/* .container {
+    display: grid;
+    grid-template-columns: 300px 50px 100px;
+    grid-template-rows: 200px 50px;
+} */
+
+/* .container {
+	width: 600px;
+	display: grid;
+	grid-template-columns: repeat(6, 100px);
+} */
+/* grid-template-column: 100px 100px 100px 100px 100px 100px; */
+
+/* 사용 가능한 공간의 일정 비율 */
+/* .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+} */
+
+/* .container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+} */
+/* 공간은 4개로 나뉘게 되고 (2+1+1=4), 첫 번째 column은 2/4만큼 가집니다. 그런 다음 남은 1/2를 두 번째와 세 번째 column이 하나씩 차지 */
+
+.container {
+	display: grid;
+	grid-template-columns: 120px repeat(3, 1fr) 2fr 10%;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+}
